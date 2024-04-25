@@ -11,40 +11,44 @@ body {
     width: 100%;
     background-color: white;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-  }
-.gap-5xs{
-    gap: 50px;
-  }
+    
+}
+
+.gap-5xs {
+    gap: 1px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
 }
+
 .img {
     display: block;
-  }
-  
-  .img--logo {
-    width: auto;
-    height: 60px;
-  }
+}
 
+.img--logo {
+    width: 80px;
+    height: 50px;
+}
 
 .link {
-    padding: 4px 16px;
+    padding: 4px 14px;
     color: black;
+    font-size: 14 px;
     font-weight: 700;
     text-decoration: none;
     border-radius: 16px;
     transition: background-color 0.25s, color 0.25s;
-  }
-  
-  .link:hover,
-  .link--active {
+}
+
+.link:hover,
+.link--active {
     background-color: #d62852;
     color: white;
-  }
+}
 
 .navlink {
     list-style: none;
@@ -56,7 +60,6 @@ nav {
 .navlink > li {
     display: inline-block;
     position: relative;
-    
 }
 
 .navlink > li > ul {
@@ -64,40 +67,34 @@ nav {
     list-style: none;
     position: absolute;
     min-width: 140px;
-    top: 100%; 
-    left: 0; 
+    top: 100%;
+    left: 0;
     z-index: 1;
 }
 
 .navlink > li:hover > ul {
     display: block;
-    
-    
-    
 }
-.navlink  li  ul li {
+
+.navlink li ul li {
     margin-top: 4px;
-    
 }
 
-
-
-.textos{
+.textos {
     color: #ff3366;
     background-color: white;
     background-position: center;
     text-align: center;
     background-size: cover;
     font-weight: 700;
-
 }
 
 .banner {
-    
+    margin-top: 2%;
     z-index: 0;
-    background-image: url('../img/MMVD2.png');
-    width: 100%;
-    height: 150px;
+    background-image: url('../img/MMVD3.png');
+    width: auto;
+    height: auto;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -140,11 +137,9 @@ nav {
 }
 
 footer {
-    
     background-color: white;
     padding: 20px 0;
     bottom: 100%;
-
 }
 
 .footer-content {
@@ -157,8 +152,35 @@ footer {
     margin-left: 10px;
 }
 
-
 .social-links img {
     width: 30px;
     height: 30px;
+}
+
+/* para telefono */
+@media (max-width: 768px) {
+    .navlink {
+        justify-content: center;
+    }
+
+    nav {
+        padding: 0 0px;
+    }
+
+    .header {
+        position: fixed;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 50px 0 20px 0;
+    }
+
+    .producto {
+        flex: 0 0 calc(50% - 20px);
+    }
+    .gap-5xs {
+        gap: 0;
+    }
 }
