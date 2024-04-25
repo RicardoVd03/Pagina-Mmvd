@@ -17,12 +17,26 @@ body {
 .gap-5xs {
     gap: 1px;
 }
+.inicio-sesion{
+    list-style: none;
+    display: flex;
+    background-color: white;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    font-weight: 700;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
-nav {
+
+.navegator {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    list-style: none;
 }
 
 .img {
@@ -165,7 +179,7 @@ footer {
         justify-content: center;
     }
 
-    nav {
+    .navegator {
         padding: 0 0px;
     }
 
@@ -178,7 +192,18 @@ footer {
         height: auto;
         padding: 50px 0 20px 0;
     }
-
+    .inicio-sesion{
+        list-style: none;
+        display: flex;
+        background-color: white;
+        background-position: center;
+        text-align: center;
+        background-size: cover;
+        font-weight: 700;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
     .producto {
         flex: 0 0 calc(50% - 20px);
     }
