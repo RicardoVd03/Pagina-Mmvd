@@ -79,9 +79,11 @@ nav {
 .navlink li ul li {
     margin-top: 4px;
 }
-
-.textos {
+main section h2 {
     color: #ff3366;
+    
+}
+.textos {
     background-color: white;
     background-position: center;
     text-align: center;
