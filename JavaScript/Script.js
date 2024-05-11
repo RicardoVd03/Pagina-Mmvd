@@ -1,37 +1,37 @@
 const products = [
   {
     id: 1,
-    image: '../img/Ropa/CONJUNTO.png',
+    image: './img/Ropa/CONJUNTO.png',
     title: 'Conjunto',
     price: 'Price : $5100' 
   },
   {
     id: 2,
-    image: '../img/Ropa/POLO.png',
+    image: './img/Ropa/POLO.png',
     title: 'Polo',
     price: 'Price : $1100'
   },
   {
     id: 3,
-    image: '../img/Ropa/OTROCONJUNTO.png',
+    image: './img/Ropa/OTROCONJUNTO.png',
     title: 'Conjunto',
     price: 'Price : $2000'
   },
   {
     id: 4,
-    image: '../img/Ropa/OTROPOLO.png',
+    image: './img/Ropa/OTROPOLO.png',
     title: 'Polo',
     price: 'Price : $6000'
   },
   {
     id: 5,
-    image: '../img/Ropa/jacket.png',
+    image: './img/Ropa/jacket.png',
     title: 'Blazer',
     price: 'Price : $5500'
   },
   {
     id: 6,
-    image: '../img/Ropa/POLOo.png',
+    image: './img/Ropa/POLOo.png',
     title: 'Polo',
     price: 'Price : $5100'
   }
