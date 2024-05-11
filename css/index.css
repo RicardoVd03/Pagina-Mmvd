@@ -281,6 +281,9 @@ td {
         background-color: #d62852;
     }
 }
+.carrito{
+    color: inherit;
+}
 
 /* para telefono */
 @media (max-width: 768px) {
