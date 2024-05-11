@@ -258,7 +258,7 @@ td {
 }
 
 .borrar {
-    background-color: #111111;
+    background-color:  #ff3366;
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
@@ -270,10 +270,16 @@ td {
 .btn-2 {
     display: inline-block;
     padding-left: 7px 10px;
-    background-color: #111111;
+    background-color:  #ff3366;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 15px;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    &:hover{
+        background-color: #d62852;
+    }
 }
 
 /* para telefono */
