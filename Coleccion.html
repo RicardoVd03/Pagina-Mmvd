@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -40,9 +40,25 @@
                         <li><a href="#" class="link">Contacto</a></li>
                         <li><a href="#" class="link">Acerca de</a></li>
                     </ul>
+                    
                 </li>
-                <li>
-                    <a href="./carrito.html"><i class="bi bi-cart"></i></a>
+                
+                <li class="submenu"> 
+                    <a href="#" id="img-carrito" class="carrito"><i class="bi bi-cart"></i></a>
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar-Carrito</a>
+                    </div>
                 </li>
              </ul>
              
@@ -53,57 +69,22 @@
     <main>
         <nav>
             <ul class="inicio-sesion gap-5xs">
-                
                 <li><a href="#" class="link">Iniciar sesión</a></li>
                 <li><a href="#" class="link">Registro</a></li>
              </ul>
              
             </nav>
-        <section class="banner">
-            <a href="./Coleccion.html" class="btn">Ver colección</a>
-        </section>
         
         <section class="textos">
-            <h2>Bienvenido a MMVD</h2>
-            <p>Descubre las últimas tendencias en moda.</p>
+            <h2>Descubre Las Ultimas Tendencias </h2>
+            
             
         </section>
 
-        <section class="productos">
+        <section class="productos" id="productos"></section>
 
-            <div class="producto">
-                <img src="./img/Ropa/CONJUNTO.png">
-                
-                
-            </div>
-            <div class="producto">
-                <img src="./img/Ropa/POLO.png" alt="">
-                
-                
-            </div>
-            <div class="producto">
-                <img src="./img/Ropa/OTROCONJUNTO.png" alt="">
-                
-                
-            </div>
-            <div class="producto">
-                <img src="./img/Ropa/OTROPOLO.png" alt="">
-                
-                
-            </div>
-        </div>
-        <div class="producto">
-            <img src="./img/Ropa/jacket.png" alt="">
-            
-            
-        </div>
-        <div class="producto">
-            <img src="./img/Ropa/POLOo.png" alt="">
-            
-            
-        </div>
-
-        </section>
+        <div id="detail"></div>
+        
     </main>
 
     <footer>
@@ -116,7 +97,7 @@
             </div>
         </div>
     </footer>
-    
 </body>
+<script src="./JavaScript/script.js"></script>
 
 </html>

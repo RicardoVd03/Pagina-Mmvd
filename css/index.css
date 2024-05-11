@@ -5,19 +5,21 @@ body {
 }
 
 .header {
+
     position: fixed;
     z-index: 1;
     top: 0;
     width: 100%;
     background-color: white;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .gap-5xs {
     gap: 1px;
 }
-.inicio-sesion{
+
+.inicio-sesion {
     list-style: none;
     display: flex;
     background-color: white;
@@ -51,11 +53,10 @@ body {
 .link {
     padding: 4px 14px;
     color: black;
-    font-size: 14 px;
+    font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     border-radius: 16px;
-    transition: background-color 0.25s, color 0.25s;
 }
 
 .link:hover,
@@ -71,12 +72,12 @@ body {
     align-items: center;
 }
 
-.navlink > li {
+.navlink>li {
     display: inline-block;
     position: relative;
 }
 
-.navlink > li > ul {
+.navlink>li>ul {
     display: none;
     list-style: none;
     position: absolute;
@@ -92,17 +93,19 @@ body {
     padding-block: 4px;
 }
 
-.navlink > li:hover > ul {
+.navlink>li:hover>ul {
     display: block;
 }
 
 .navlink li ul li {
     margin-top: 4px;
 }
+
 main section h2 {
     color: #ff3366;
-    
+
 }
+
 .textos {
     background-color: white;
     background-position: center;
@@ -114,9 +117,9 @@ main section h2 {
 .banner {
     margin-top: 2%;
     z-index: 0;
-    background-image: url('../img/MMVD3.png');
-    width: auto;
-    height: auto;
+    background-image: url('../img/background3.jpg');
+    width: 1232;
+    height: 768;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -143,19 +146,20 @@ main section h2 {
 .productos {
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .producto {
+    margin: 10px;
     flex: 0 0 calc(33.333% - 20px);
-    margin-bottom: 20px;
+    justify-content: center;
     text-align: center;
 }
 
 .producto img {
-    max-width: 100%;
-    border-radius: 5px;
+    max-width: 90%;
+    border-radius: 16px;
 }
 
 footer {
@@ -171,12 +175,105 @@ footer {
 }
 
 .social-links a {
+    color: inherit;
     margin-left: 10px;
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    margin-inline: auto;
+    border-radius: 16px;
+    box-shadow: 0 0 4px 0 black;
+    background-color: white;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+    }
+
+    & h3 {
+        font-size: 24px;
+    }
+
+    & h4 {
+        font-size: 18px;
+    }
+
+}
+
+.modal_text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.agregar-carrito {
+    margin: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button_style {
+    background-color: #ff3366;
+    color: white;
+    border-radius: 16px;
+    width: 70%;
+}
+
+
+.submenu {
+
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(100px);
+    top: 100%;
+    z-index: 1;
+    background-color: #f3c0ba76;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: #ffffff;
+}
+
+.borrar {
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding-left: 7px 10px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 /* para telefono */
@@ -198,7 +295,8 @@ footer {
         height: auto;
         padding: 50px 0 20px 0;
     }
-    .inicio-sesion{
+
+    .inicio-sesion {
         list-style: none;
         display: flex;
         background-color: white;
@@ -210,9 +308,11 @@ footer {
         margin: 0;
         padding: 0;
     }
+
     .producto {
         flex: 0 0 calc(50% - 20px);
     }
+
     .gap-5xs {
         gap: 0;
     }
