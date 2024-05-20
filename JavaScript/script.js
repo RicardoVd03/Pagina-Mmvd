@@ -36,7 +36,7 @@ const products = [
     price: 'Price : $5100'
   }
 ];
-
+ 
 const productosContainer = document.getElementById('productos');
 const carrito = document.getElementById('carrito');
 const listaCarrito = document.querySelector('#lista-carrito tbody');
