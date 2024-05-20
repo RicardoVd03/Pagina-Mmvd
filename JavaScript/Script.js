@@ -3,7 +3,7 @@ const products = [
     id: 1,
     image: './img/Ropa/CONJUNTO.png',
     title: 'Conjunto',
-    price: 'Price : $5100' 
+    price: 'Price : $5100'
   },
   {
     id: 2,
@@ -41,14 +41,14 @@ const productosContainer = document.getElementById('productos');
 const carrito = document.getElementById('carrito');
 const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
-
+const shoppingCart = [];
 
 const renderProduct = (id) => {
   const product = products.find(product => product.id == id);
   const detailElement = document.getElementById('detail');
   detailElement.innerHTML = `
     <div class="modal">
-      <img src="${product.image}" alt="${product.title}">
+      <img src="${product.image}" alt="${product.title}" >
       <h3 class="modal_text">${product.title}</h3>
       <h4 class="modal_text">${product.price}</h4>
       <a href="#" class="agregar-carrito"><button class="button_style" onclick="agregarAlCarrito(${product.id})">Agregar al carrito</button></a>
@@ -65,6 +65,8 @@ function agregarAlCarrito(id) {
     precio: product.price,
     id: product.id
   };
+  shoppingCart.push(infoElement);
+  sessionStorage.setItem('shoppingCart', JSON.stringify(shoppingCart));
   insertarAlCarrito(infoElement);
 }
 
@@ -82,7 +84,7 @@ function insertarAlCarrito(elemento) {
 
 
 function eliminarDelCarrito(e) {
-  e.preventDefault();
+  // e.preventDefault();
   if (e.target.classList.contains('borrar')) {
     e.target.parentElement.parentElement.remove();
   }
@@ -104,14 +106,12 @@ function cargarEventListeners() {
   vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
 
-
 cargarEventListeners();
-
 
 products.forEach(product => {
   productosContainer.innerHTML += `
     <div class="producto" data-id="${product.id}">
-      <img src="${product.image}" alt="${product.title}">
+      <img class="producto__img" src="${product.image}" alt="${product.title}">
     </div>
   `;
 });
